@@ -5,19 +5,19 @@
 
 :root {
   --bg:            #ffffff;
-  --surface:       #f8f6f7;
-  --surface-2:     #f0ebee;
-  --ink:           #14090f;
-  --ink-2:         #3a2e34;
-  --muted:         #6b5c63;
-  --faint:         #9c8d94;
-  --accent:        #c2185b;
-  --accent-strong: #93123f;
-  --accent-tint:   #fdecf2;
-  --line:          rgba(20, 9, 15, 0.12);
-  --line-soft:     rgba(20, 9, 15, 0.07);
-  --shadow-sm: 0 1px 2px rgba(20,9,15,0.05);
-  --shadow-md: 0 14px 34px -16px rgba(146,20,70,0.28);
+  --surface:       #fdf1f6;
+  --surface-2:     #fbe1ec;
+  --ink:           #1c0e15;
+  --ink-2:         #3d2c34;
+  --muted:         #705d66;
+  --faint:         #a58e97;
+  --accent:        #d81b60;
+  --accent-strong: #ad1457;
+  --accent-tint:   #fce4ec;
+  --line:          rgba(28, 14, 21, 0.12);
+  --line-soft:     rgba(28, 14, 21, 0.07);
+  --shadow-sm: 0 1px 2px rgba(28,14,21,0.05);
+  --shadow-md: 0 14px 34px -16px rgba(173,20,87,0.3);
   --max: 1080px;
   --font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -48,7 +48,11 @@ a:hover { color: var(--accent-strong); }
 .wrap { width: min(100% - 2.5rem, var(--max)); margin-inline: auto; }
 .section { padding: clamp(3.75rem, 8vw, 6.5rem) 0; }
 .section--surface { background: var(--surface); }
-.rule { border: 0; border-top: 1px solid var(--line-soft); margin: 0; }
+.rule {
+  border: 0; height: 16px; margin: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='16'%3E%3Cpath d='M0 8 C6 0 16 0 22 8 C28 16 38 16 44 8' fill='none' stroke='%23d81b60' stroke-width='1.5' stroke-linecap='round' opacity='0.4'/%3E%3C/svg%3E");
+  background-repeat: repeat-x; background-position: center;
+}
 
 /* ---------- Typography ---------- */
 h1, h2, h3, h4 { color: var(--ink); font-weight: 650; letter-spacing: -0.02em; line-height: 1.12; margin: 0; }
@@ -78,7 +82,7 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 650; letter-spacing: -0.02em; l
 }
 .btn:hover { transform: translateY(-1px); }
 .btn:active { transform: translateY(0) scale(0.98); }
-.btn--accent:hover { box-shadow: 0 10px 22px -12px rgba(194,24,91,0.65); }
+.btn--accent:hover { box-shadow: 0 10px 22px -12px rgba(216,27,96,0.6); }
 .btn--primary:hover { box-shadow: var(--shadow-md); }
 .btn svg { width: 16px; height: 16px; }
 @media (prefers-reduced-motion: reduce) { .btn:hover, .btn:active { transform: none; } }
@@ -143,11 +147,11 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 650; letter-spacing: -0.02em; l
 .hero { position: relative; overflow: hidden; padding-top: clamp(3.5rem, 7vw, 5.5rem); padding-bottom: clamp(3rem, 6vw, 4.5rem); }
 .hero .wrap { position: relative; z-index: 1; }
 .hero-motif {
-  position: absolute; top: -8%; right: -6%; z-index: 0;
-  width: clamp(280px, 34vw, 460px); height: auto;
-  stroke: var(--accent); opacity: 0.22; pointer-events: none;
+  position: absolute; top: -4%; right: -4%; z-index: 0;
+  width: clamp(320px, 40vw, 560px); height: auto;
+  transform: rotate(-5deg); pointer-events: none;
 }
-@media (max-width: 900px) { .hero-motif { opacity: 0.14; width: clamp(220px, 50vw, 320px); } }
+@media (max-width: 900px) { .hero-motif { width: clamp(240px, 55vw, 380px); opacity: 0.65; } }
 .hero .h-display { margin-bottom: 1rem; }
 .hero-role {
   font-family: var(--mono); font-size: clamp(0.82rem, 1.5vw, 0.98rem);
@@ -212,11 +216,11 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 650; letter-spacing: -0.02em; l
   font-family: var(--mono); font-size: 0.67rem; letter-spacing: 0.05em; text-transform: uppercase;
   color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 0.26rem 0.62rem;
 }
-.tag--accent { color: var(--accent); border-color: rgba(194,24,91,0.28); background: var(--accent-tint); }
+.tag--accent { color: var(--accent); border-color: rgba(216,27,96,0.28); background: var(--accent-tint); }
 .card-link { position: absolute; inset: 0; z-index: 3; }
 .work-card .cover, .work-card .body { position: relative; }
 .work-card { transition: box-shadow 0.28s cubic-bezier(0.16,1,0.3,1), transform 0.28s cubic-bezier(0.16,1,0.3,1), border-color 0.28s ease; }
-.work-card:hover { transform: translateY(-4px); border-color: rgba(194,24,91,0.35); }
+.work-card:hover { transform: translateY(-4px); border-color: rgba(216,27,96,0.4); }
 .card-cta {
   display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 1rem;
   font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
