@@ -68,6 +68,10 @@
   }
 
   function renderHome(container) {
+    if (!order.length) {
+      container.innerHTML = '<p class="work-empty">New projects are on the way. Check back soon.</p>';
+      return;
+    }
     var html = order.map(function (slug, i) {
       var p = store[slug];
       if (!p) return '';
@@ -142,7 +146,7 @@
   function renderProject(root, slug) {
     var p = store[slug];
     if (!p) { root.innerHTML = '<div class="wrap section"><p>Project not found. <a href="index.html">Back to home</a></p></div>'; return; }
-    doc.title = p.title + ' | Kestin Kuhn';
+    doc.title = p.title + ' | Caitlin Fields';
 
     var sections = toArray(p.sections);
     var toc = sections.filter(function (s) { return s.id && s.heading; })

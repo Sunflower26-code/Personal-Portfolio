@@ -65,8 +65,7 @@ window.Portfolio["REPLACE-WITH-SLUG"] = {
   spec: [
     ["Role",     "Your role"],
     ["Timeline", "2026 or 2025 to Present"],
-    ["Tools",    "SolidWorks, Python"],
-    ["Status",   "In development or Complete or Deployed"]
+    ["Tools",    "SolidWorks, Python"]
   ],
 
   // Buttons at the top of the project page. Leave a href empty ("") to hide that button.

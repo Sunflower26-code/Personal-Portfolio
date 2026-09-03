@@ -44,7 +44,7 @@
     var d = new DOMParser().parseFromString(html, 'text/html');
     var out = {};
 
-    out.name = txt(d.querySelector('.hero .h-display')) || 'Kestin Kuhn';
+    out.name = txt(d.querySelector('.hero .h-display')) || 'Caitlin Fields';
     out.roles = all(d.querySelector('.hero .hero-role'), 'span')
       .filter(function (s) { return !s.classList.contains('sep'); })
       .map(txt).filter(Boolean);

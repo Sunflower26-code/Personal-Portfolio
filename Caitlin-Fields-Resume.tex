@@ -1,0 +1,116 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fontspec}
+\setmainfont{Carlito}
+\usepackage[hidelinks]{hyperref}
+
+% GLOBAL FIXES
+\setlength{\parindent}{0pt}     % no indentation ever
+\setlength{\parskip}{0pt}       % no extra paragraph spacing
+\setlist[itemize]{
+noitemsep,
+topsep=0.5pt,
+leftmargin=1.2em
+}
+
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\pagenumbering{gobble}
+
+% Company line (FORCED LEFT ALIGN)
+\newcommand{\companyLine}[2]{
+\noindent
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+\textbf{#1} & #2 \\
+\end{tabular*}
+}
+
+% Role line
+\newcommand{\roleLine}[2]{
+\noindent
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+\textit{#1} & #2 \\
+\end{tabular*}
+}
+
+\begin{document}
+
+% HEADER
+\begin{center}
+{\Large \textbf{Caitlin Fields}} \\
+707-430-3363 \quad | \quad
+\href{mailto:fieldscm26@gmail.com}{fieldscm26@gmail.com}
+\quad | \quad
+Centennial, CO
+\end{center}
+
+% SUMMARY
+\section*{PROFESSIONAL SUMMARY}
+Dedicated and reliable college student with strong interpersonal communication and analytical skills, looking for experience and opportunity in renewable and sustainable energy fields.
+
+% EDUCATION
+\section*{EDUCATION}
+\companyLine{University of Colorado Denver}{}
+\roleLine{Bachelor of Science in Mechanical Engineering}{}
+\begin{itemize}
+\item Dean's List, 3.9 GPA
+\end{itemize}
+
+% SKILLS
+\section*{SKILLS}
+\begin{itemize}
+\item CAD/CAM
+\item Python
+\item Data entry and analysis
+\item Additive manufacturing
+\item Microelectronics
+\end{itemize}
+
+% WORK HISTORY
+\section*{WORK HISTORY}
+
+\companyLine{University of Colorado Denver: College of Engineering, Design, and Computing}{Denver, CO}
+\roleLine{Teacher's Assistant --- Chemistry for Engineers}{08/2026 -- Present}
+\begin{itemize}
+\item Teaching Assistant for an introductory-level chemistry course for multiple engineering majors.
+\item Responsibilities include assisting students in class and in office hours, communication with the professor, and grading.
+\end{itemize}
+
+\vspace{.2em}
+
+\companyLine{University of Colorado Denver: College of Engineering, Design, and Computing}{Denver, CO}
+\roleLine{Teacher's Assistant --- Foundations of Computational Innovation}{08/2025 -- Present}
+\begin{itemize}
+\item Teaching Assistant for an introductory-level Python programming course centered on engineering applications.
+\item Responsibilities include grading, communication with the professor, assisting students in office hours, and assisting in creation of coursework.
+\end{itemize}
+
+\vspace{.2em}
+
+\companyLine{Dutch Bros Coffee Co.}{Centennial, CO}
+\roleLine{Broista}{06/2024 -- Present}
+\begin{itemize}
+\item Responsible for making customer and coworker connections, as well as completing orders in a correct and timely manner.
+\item Additional assistance with training new employees and communicating calendar information to coworkers.
+\end{itemize}
+
+\vspace{.2em}
+
+\companyLine{Bear Creek High School}{Lakewood, CO}
+\roleLine{Student Teacher}{08/2025 -- 12/2025}
+\begin{itemize}
+\item Student teacher for three high school level history classes: AP United States Government \& Politics, United States Legal Systems, and National History Day.
+\item Responsible for grading, assisting with lessons, and substitute teaching.
+\end{itemize}
+
+\vspace{.2em}
+
+\companyLine{University of Colorado Denver: College of Liberal Arts and Sciences}{Denver, CO}
+\roleLine{Research Assistant}{08/2025 -- 01/2026}
+\begin{itemize}
+\item Responsible for data analysis and organization of historic documents, specifically 1830s--1990s United Kingdom with a focus on unemployment and its effects on mental and physical health.
+\item Personal research was done to analyze connections between unemployment rates and the popularity of the communist party in the UK.
+\end{itemize}
+
+\end{document}

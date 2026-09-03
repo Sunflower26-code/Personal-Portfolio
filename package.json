@@ -1,5 +1,5 @@
 {
-  "name": "kestin-kuhn-portfolio",
+  "name": "caitlin-fields-portfolio",
   "private": true,
   "version": "1.0.0",
   "description": "Tooling for the portfolio. The website itself has no build step; this is only used to export the PDF.",

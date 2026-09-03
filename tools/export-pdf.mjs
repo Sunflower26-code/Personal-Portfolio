@@ -15,7 +15,7 @@ import { extname, join, normalize, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(fileURLToPath(new URL('..', import.meta.url)));
-const OUT = resolve(process.argv[2] || join(ROOT, 'Kestin-Kuhn-Portfolio.pdf'));
+const OUT = resolve(process.argv[2] || join(ROOT, 'Caitlin-Fields-Portfolio.pdf'));
 
 const TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -80,7 +80,7 @@ await page.pdf({
   footerTemplate:
     '<div style="width:100%;font-family:Inter,Arial,sans-serif;font-size:7pt;color:#8b929c;' +
     'padding:0 15mm;display:flex;justify-content:space-between;">' +
-    '<span>Kestin Kuhn</span><span class="pageNumber"></span></div>',
+    '<span>Caitlin Fields</span><span class="pageNumber"></span></div>',
   margin: { top: '15mm', right: '15mm', bottom: '17mm', left: '15mm' }
 });
 

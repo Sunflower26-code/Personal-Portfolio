@@ -3,8 +3,8 @@ name: Build Resume PDF
 on:
   push:
     paths:
-      - "Kestin-Kuhn-Resume.tex"
-      - ".github/workflows/build-resume.yml"
+      - "Caitlin-Fields-Resume.tex"
+      - ".github/workflows/Build_PDF.yml"
   workflow_dispatch:
 
 permissions:
@@ -23,18 +23,15 @@ jobs:
       - name: Compile resume
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: Kestin-Kuhn-Resume.tex
+          root_file: Caitlin-Fields-Resume.tex
           latexmk_use_lualatex: true
-
-      - name: Rename PDF for website
-        run: cp Kestin-Kuhn-Resume.pdf Kestin_Kuhn_Resume.pdf
 
       - name: Commit updated PDF
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add Kestin_Kuhn_Resume.pdf
+          git add Caitlin-Fields-Resume.pdf
 
           if git diff --cached --quiet; then
             echo "Resume PDF has not changed."

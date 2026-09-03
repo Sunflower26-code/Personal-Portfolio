@@ -9,14 +9,14 @@
 
 :root {
   --bg:            #ffffff;
-  --surface:       #f5f6f8;
-  --ink:           #0b0e13;
-  --ink-2:         #2c323c;
-  --muted:         #5b6470;
-  --faint:         #8b929c;
-  --accent:        #1857d6;
-  --line:          rgba(11, 14, 19, 0.14);
-  --line-soft:     rgba(11, 14, 19, 0.08);
+  --surface:       #f8f6f7;
+  --ink:           #14090f;
+  --ink-2:         #362b31;
+  --muted:         #6b5c63;
+  --faint:         #9c8d94;
+  --accent:        #c2185b;
+  --line:          rgba(20, 9, 15, 0.14);
+  --line-soft:     rgba(20, 9, 15, 0.08);
   --font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }

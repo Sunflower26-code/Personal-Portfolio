@@ -1,4 +1,4 @@
-# Kestin Kuhn, Engineering Portfolio
+# Caitlin Fields, Portfolio
 
 A minimal, professional portfolio site. Plain HTML, CSS, and JavaScript with no
 build step, so it can be edited directly on GitHub and hosted on GitHub Pages.
@@ -26,7 +26,7 @@ content/
     project.js        All of that project's text and settings
     *.jpg / *.png     That project's images
 tools/export-pdf.mjs  Renders export.html to a PDF
-Kestin-Kuhn-Resume.pdf
+Caitlin-Fields-Resume.pdf
 ```
 
 ## Edit a project
@@ -92,14 +92,14 @@ the live site with nothing to keep in sync.
 
 **The easy way.** In the Actions tab, run **Build Portfolio PDF**. It renders the
 PDF and attaches it to the run as a download, and by default also commits
-`Kestin-Kuhn-Portfolio.pdf` to the branch. Nothing to install.
+`Caitlin-Fields-Portfolio.pdf` to the branch. Nothing to install.
 
 **Locally**, if you have Node:
 
 ```bash
 npm install
 npx playwright install chromium
-npm run pdf                       # writes Kestin-Kuhn-Portfolio.pdf
+npm run pdf                       # writes Caitlin-Fields-Portfolio.pdf
 npm run pdf -- some-name.pdf      # or choose the file name
 ```
 
