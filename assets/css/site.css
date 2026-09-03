@@ -140,7 +140,14 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 650; letter-spacing: -0.02em; l
 .nav-toggle[aria-expanded="true"] span::after  { transform: translate(-50%,0) rotate(-45deg); }
 
 /* ---------- Hero ---------- */
-.hero { padding-top: clamp(3.5rem, 7vw, 5.5rem); padding-bottom: clamp(3rem, 6vw, 4.5rem); }
+.hero { position: relative; overflow: hidden; padding-top: clamp(3.5rem, 7vw, 5.5rem); padding-bottom: clamp(3rem, 6vw, 4.5rem); }
+.hero .wrap { position: relative; z-index: 1; }
+.hero-motif {
+  position: absolute; top: -8%; right: -6%; z-index: 0;
+  width: clamp(280px, 34vw, 460px); height: auto;
+  stroke: var(--accent); opacity: 0.22; pointer-events: none;
+}
+@media (max-width: 900px) { .hero-motif { opacity: 0.14; width: clamp(220px, 50vw, 320px); } }
 .hero .h-display { margin-bottom: 1rem; }
 .hero-role {
   font-family: var(--mono); font-size: clamp(0.82rem, 1.5vw, 0.98rem);
@@ -244,7 +251,7 @@ h1, h2, h3, h4 { color: var(--ink); font-weight: 650; letter-spacing: -0.02em; l
 
 /* ---------- Toolbox ---------- */
 .toolbox { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line-soft); border: 1px solid var(--line-soft); border-radius: 18px; overflow: hidden; }
-.tool-group { background: var(--accent-tint); padding: clamp(1.3rem, 2.4vw, 1.8rem); }
+.tool-group { background: var(--bg); padding: clamp(1.3rem, 2.4vw, 1.8rem); }
 .tool-group h3 { font-size: 0.78rem; font-family: var(--mono); letter-spacing: 0.13em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin-bottom: 1rem; }
 .chips { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .chip { font-size: 0.88rem; color: var(--ink); font-weight: 500; border: 1px solid var(--line); border-radius: 999px; padding: 0.38rem 0.85rem; background: var(--bg); }
