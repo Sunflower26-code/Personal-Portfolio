@@ -1,5 +1,5 @@
 \documentclass[10pt]{article}
-\usepackage[margin=0.7in]{geometry}
+\usepackage[margin=0.65in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{fontspec}
@@ -8,15 +8,17 @@
 
 % GLOBAL FIXES
 \setlength{\parindent}{0pt}     % no indentation ever
-\setlength{\parskip}{0pt}       % no extra paragraph spacing
+\setlength{\parskip}{2pt}       % no extra paragraph spacing
 \setlist[itemize]{
 noitemsep,
-topsep=0.5pt,
+topsep=0pt,
 leftmargin=1.2em
 }
 
 \titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{5pt}{2pt}
 \pagenumbering{gobble}
+
 
 % Company line (FORCED LEFT ALIGN)
 \newcommand{\companyLine}[2]{
@@ -38,11 +40,11 @@ leftmargin=1.2em
 
 % HEADER
 \begin{center}
-{\Large \textbf{Caitlin Fields}} \\
+{\Large \textbf{Caitlin Fields}} \\[2pt]
 Denver, CO
  \quad | \quad
 \href{mailto:fieldscm26@gmail.com}{fieldscm26@gmail.com}
-\quad | \quad
+
 
 \href{https://sunflower26-code.github.io/Personal-Portfolio}{https://sunflower26-code.github.io/Personal-Portfolio}
 
@@ -51,7 +53,7 @@ Denver, CO
 
 % SUMMARY
 \section*{PROFESSIONAL SUMMARY}
-Dedicated and reliable college student with strong interpersonal communication and analytical skills, looking for experience and opportunity in renewable and sustainable energy fields.
+Reliable Mechanical Engineering student with strong interpersonal communication and data analysis skills, looking for experience and opportunity in renewable and sustainable energy fields.
 
 % EDUCATION
 \section*{EDUCATION}
@@ -64,48 +66,35 @@ Dedicated and reliable college student with strong interpersonal communication a
 % SKILLS
 \section*{SKILLS}
 \begin{itemize}
+\item Python programming
+\item Data entry, organization, and analysis
+\item Technical documentation and communication
 \item CAD/CAM
-\item Python
-\item Data entry and analysis
 \item Additive manufacturing
 \item Microelectronics
 \end{itemize}
 
 % WORK HISTORY
-\section*{WORK HISTORY}
+\section*{ENGINEERING \& RESEARCH EXPERIENCE}
 
 \companyLine{University of Colorado Denver: College of Engineering, Design, and Computing}{Denver, CO}
-\roleLine{Teacher's Assistant --- Chemistry for Engineers}{08/2026 -- Present}
+\roleLine{Teaching Assistant --- Chemistry for Engineers}{08/2026 -- Present}
 \begin{itemize}
-\item Teaching Assistant for an introductory-level chemistry course for multiple engineering majors.
-\item Responsibilities include assisting students in class and in office hours, communication with the professor, and grading.
+\item Support an introductory-level chemistry course for students across multiple engineering majors.
+\item Communicated technical concepts and problem-solving strategies to students in class and during office hours.
+\item Grade student work and provide feedback for accuracy and completeness.
+\item Coordinated with course professor and other Teaching Assistants to address student questions about course objectives and content.
 \end{itemize}
 
 \vspace{.2em}
 
 \companyLine{University of Colorado Denver: College of Engineering, Design, and Computing}{Denver, CO}
-\roleLine{Teacher's Assistant --- Foundations of Computational Innovation}{08/2025 -- Present}
+\roleLine{Teaching Assistant --- Foundations of Computational Innovation}{08/2025 -- Present}
 \begin{itemize}
-\item Teaching Assistant for an introductory-level Python programming course centered on engineering applications.
-\item Responsibilities include grading, communication with the professor, assisting students in office hours, and assisting in creation of coursework.
-\end{itemize}
-
-\vspace{.2em}
-
-\companyLine{Dutch Bros Coffee Co.}{Centennial, CO}
-\roleLine{Broista}{06/2024 -- Present}
-\begin{itemize}
-\item Responsible for making customer and coworker connections, as well as completing orders in a correct and timely manner.
-\item Additional assistance with training new employees and communicating calendar information to coworkers.
-\end{itemize}
-
-\vspace{.2em}
-
-\companyLine{Bear Creek High School}{Lakewood, CO}
-\roleLine{Student Teacher}{08/2025 -- 12/2025}
-\begin{itemize}
-\item Student teacher for three high school level history classes: AP United States Government \& Politics, United States Legal Systems, and National History Day.
-\item Responsible for grading, assisting with lessons, and substitute teaching.
+\item Support an introductory-level Python programming course centered on engineering applications and data analysis.
+\item Assist students with programming concepts, troubleshooting, and computational result interpretation in class and during office hours.
+\item Communicate technical concepts to students with varying levels of programming experience.
+\item Assist in grading, as well as creation and organization of coursework.
 \end{itemize}
 
 \vspace{.2em}
@@ -113,8 +102,18 @@ Dedicated and reliable college student with strong interpersonal communication a
 \companyLine{University of Colorado Denver: College of Liberal Arts and Sciences}{Denver, CO}
 \roleLine{Research Assistant}{08/2025 -- 01/2026}
 \begin{itemize}
-\item Responsible for data analysis and organization of historic documents, specifically 1830s--1990s United Kingdom with a focus on unemployment and its effects on mental and physical health.
-\item Personal research was done to analyze connections between unemployment rates and the popularity of the communist party in the UK.
+\item Organized and analyzed a large collection of historical documents and relevant associated data.
+\item Conducted research to analyze connections between unemployment rates and political trends in the United Kingdom.
+\item Synthesized findings from multiple sources and communicated results through research-based analysis.
+\end{itemize}
+
+\section*{ADDITIONAL EXPERIENCE}
+
+\companyLine{Dutch Bros Coffee Co.}{Centennial, CO}
+\roleLine{Broista}{06/2024 -- Present}
+\begin{itemize}
+\item Responsible for providing accurate and timely service while communicating effectively with coworkers and customers in a fast-paced environment.
+\item Additional assistance with training new employees and communicating operational and scheduling information to coworkers.
 \end{itemize}
 
 \end{document}
